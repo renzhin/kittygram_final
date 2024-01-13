@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', "Секретный ключ отсутсвует")
 
-DEBUG = os.getenv('DEBUG_MODE', "Значения режима отладки отсутсвует")
+DEBUG = os.getenv(DEBUG_MODE, "Значения режима отладки отсутсвует")
 
 ALLOWED_HOSTS = os.getenv(
     'ALLOW_HOSTS', "Значение списка разрешенных хостов отсутсвует"
